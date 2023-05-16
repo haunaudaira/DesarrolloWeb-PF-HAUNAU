@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans;
+}
+
+.bg {
+  background-image: url(../img/fondos/fondoxl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: auto;
+}
+
+.header__login {
+  text-align: right;
+  margin: 10px;
+}
+.header__login a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+.header__login a:hover {
+  background-color: rgba(240, 248, 255, 0.384);
+  padding: 10px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 540px) {
+  .header__login a {
+    font-size: 18px;
+  }
+}
+
+.index__nombreyfoto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .index__nombreyfoto {
+    margin-bottom: 120px;
+  }
+}
+.index__nombreyfoto .index__txt {
+  text-align: left;
+}
+.index__nombreyfoto .index__txt h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 95px;
+}
+@media screen and (max-width: 320px) {
+  .index__nombreyfoto .index__txt h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .index__nombreyfoto .index__txt h1 {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index__nombreyfoto .index__txt h1 {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+}
+.index__nombreyfoto .index__txt p {
+  padding-left: 25px;
+  font-size: 25px;
+}
+@media screen and (max-width: 320px) {
+  .index__nombreyfoto .index__txt p {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .index__nombreyfoto .index__txt p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index__nombreyfoto .index__txt p {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
+.index__nombreyfoto img {
+  padding: 0;
+  animation: move-imagen 4s linear infinite;
+  width: 600px;
+}
+@keyframes move-imagen {
+  0% {
+    transform: translateY(4%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(4%);
+  }
+}
+@media screen and (max-width: 320px) {
+  .index__nombreyfoto img {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .index__nombreyfoto img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index__nombreyfoto img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .index__nombreyfoto img {
+    width: 400px;
+  }
+}
+
+.cards__index {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 320px) {
+  .cards__index {
+    max-width: 20rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cards__index {
+    display: grid;
+    grid-area: span;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cards__index {
+    max-width: 50rem;
+    margin-top: 130px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cards__index {
+    margin: auto;
+  }
+}
+
+.iniciosesion {
+  margin: auto;
+  margin-top: 100px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.8235294118);
+  box-shadow: 1px 1px 30px -5px #212222;
+}
+.iniciosesion .iniciosesion__botones a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 6px;
+  line-height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #6C757D;
+}
+.iniciosesion .iniciosesion__botones a:hover {
+  background-color: #4f565c;
+}
+
+.pie {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(157, 231, 215, 0.2745098039);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pie a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=estilo.css.map */
