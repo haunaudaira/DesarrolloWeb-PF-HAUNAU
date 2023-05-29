@@ -22,20 +22,20 @@
     ul{
         li{
             list-style: none;
-            a{
-                text-decoration: none;
-                color: black;
-                display: block;
-                padding: 2px;
-                &:hover{
-                    background-color: #ffffff7c;
-                    border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 2px;
+            
+            &:hover{
+                background-color: #ffffff7c;
+                border-radius: 5px;
                 }
             
-                @include media-up(xs){
-                    font-size: 15px;
-                }
+            @include media-up(xs){
+                font-size: 15px;
             }
+            
         }
     }
     a{
@@ -73,7 +73,6 @@
         font-size: 20px;
         color: black;
         margin-top: 20px;
-
         li{
             a{
                 text-decoration: none;
