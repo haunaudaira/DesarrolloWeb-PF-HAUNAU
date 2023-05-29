@@ -117,13 +117,15 @@ $subrayado: 1px solid #212222;
     }
 }
 
-.ventas { grid-area: ventas; 
+.ventas { 
+    grid-area: ventas; 
     border: 1px solid black;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
     background-color: #79dfc99f;
+    align-items: center;
 
     &:hover{
         transform: scale(1.1, 1.1);
