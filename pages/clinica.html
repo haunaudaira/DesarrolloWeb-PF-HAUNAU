@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico:regular" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Clinica</title>
 </head>
 <body class="bg_clinica">
     <header>
-        <div class="all__header">
+        <div class="all__header" data-aos="fade-down">
             <a href="../pages/inicio.html">VetCare</a>
                 <ul class="nav">
                     <li><a href="">Perfil</a>
@@ -22,7 +23,7 @@
                 </ul>
         </div>
 
-        <div class="navbar__all">
+        <div class="navbar__all" data-aos="fade-down">
             <ul class="menu">
                 <li><a href="../pages/inicio.html">Inicio</a></li>
                 <li><a href="../pages/clinica.html" class="clinica__txt">Clinica</a></li>
@@ -33,7 +34,7 @@
     </header>
 
     <main>
-        <div class="busqueda">
+        <div class="busqueda" data-aos="fade-down" data-aos-delay="200">
             <h3>Buscar paciente:</h3>
             <p>Buscar por nombre, apellido, dni del dueño, historia clínica</p>
             <input type="search">
@@ -44,5 +45,9 @@
     <footer class="pie">
         <a href="">Soporte</a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
