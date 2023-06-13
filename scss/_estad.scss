@@ -113,5 +113,10 @@ $subrayado: 1px solid #212222;
             font-size: 23px;
             }
     }
+    @include media-up(sm){
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

@@ -3,7 +3,6 @@
     background-image: url(../images/fondos/fondo2.png);
     background-repeat: no-repeat;
     background-size: auto;
-    max-height: auto;
 
     @include media-up(sm){
         background-image: url(../images/fondos/fondoxxs.png);
@@ -83,21 +82,3 @@
         }
     }  
 }
-
-.pie__clinica {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #9de7d746;
-    position: absolute; 
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    p{
-        margin: 0;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-} 
