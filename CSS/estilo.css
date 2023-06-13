@@ -13,7 +13,7 @@
 
 .header__login {
   text-align: right;
-  margin: 10px; }
+  margin: 20px; }
   .header__login a {
     text-decoration: none;
     color: black;
@@ -24,7 +24,8 @@
       border-radius: 5px; }
     @media screen and (max-width: 540px) {
       .header__login a {
-        font-size: 18px; } }
+        font-size: 18px;
+        margin: 5px; } }
 
 .index__nombreyfoto {
   display: flex;
@@ -92,6 +93,10 @@
   justify-content: space-evenly;
   margin-top: 130px;
   margin-bottom: 100px; }
+  .cards__index .card {
+    border: none; }
+    .cards__index .card img {
+      align-items: center; }
   @media screen and (max-width: 320px) {
     .cards__index {
       max-width: 20rem; } }
@@ -110,7 +115,7 @@
 
 .iniciosesion {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   max-width: 500px;
   text-align: center;
   border-radius: 15px;
@@ -148,12 +153,82 @@
   align-items: center;
   background-color: #9de7d746;
   position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
+  bottom: auto;
   width: 100%;
   padding: 10px; }
+  .pie p {
+    margin: 0; }
   .pie a {
     text-decoration: none;
     color: black; }
+
+.pie_index {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #9de7d746;
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  padding: 10px; }
+  .pie_index a {
+    text-decoration: none;
+    color: black; }
+  .pie_index .pie__indeximg {
+    display: flex;
+    align-items: center; }
+    .pie_index .pie__indeximg .logo1 {
+      margin: 5px;
+      width: 40px; }
+      .pie_index .pie__indeximg .logo1:hover {
+        transform: scale(1.1, 1.1); }
+      @media screen and (max-width: 768px) {
+        .pie_index .pie__indeximg .logo1 {
+          margin: 5px;
+          width: 25px; } }
+      @media screen and (max-width: 540px) {
+        .pie_index .pie__indeximg .logo1 {
+          margin: 5px;
+          width: 25px; } }
+      @media screen and (max-width: 320px) {
+        .pie_index .pie__indeximg .logo1 {
+          margin: 5px;
+          width: 25px; } }
+    .pie_index .pie__indeximg .logo2 {
+      margin: 5px;
+      width: 30px; }
+      .pie_index .pie__indeximg .logo2:hover {
+        transform: scale(1.1, 1.1); }
+      @media screen and (max-width: 768px) {
+        .pie_index .pie__indeximg .logo2 {
+          margin: 5px;
+          width: 20px; } }
+      @media screen and (max-width: 540px) {
+        .pie_index .pie__indeximg .logo2 {
+          margin: 5px;
+          width: 20px; } }
+      @media screen and (max-width: 320px) {
+        .pie_index .pie__indeximg .logo2 {
+          margin: 5px;
+          width: 20px; } }
+    .pie_index .pie__indeximg .logo3 {
+      margin: 5px;
+      width: 30px; }
+      .pie_index .pie__indeximg .logo3:hover {
+        transform: scale(1.1, 1.1); }
+      @media screen and (max-width: 768px) {
+        .pie_index .pie__indeximg .logo3 {
+          margin: 5px;
+          width: 20px; } }
+      @media screen and (max-width: 540px) {
+        .pie_index .pie__indeximg .logo3 {
+          margin: 5px;
+          width: 20px; } }
+      @media screen and (max-width: 320px) {
+        .pie_index .pie__indeximg .logo3 {
+          margin: 5px;
+          width: 20px; } }
 
 .bg_inicio {
   background-image: url(../images/fondos/fondo1.png);
@@ -168,73 +243,57 @@
       background-image: url(../images/fondos/fondocelular.png);
       background-size: cover; } }
 
-.inicio__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff7c;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px; }
+@media screen and (max-width: 540px) {
   .inicio__header a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black; }
-    @media screen and (max-width: 540px) {
-      .inicio__header a {
-        font-size: 16px;
-        margin: 5px; } }
+    font-size: 16px;
+    margin: 5px; } }
 
-.navbar__inicio .nav-item a {
-  font-size: 20px;
-  color: black;
-  margin-top: 10px;
-  margin-bottom: 70px; }
-  @media screen and (max-width: 540px) {
-    .navbar__inicio .nav-item a {
-      font-size: 18px;
-      margin-bottom: 20px; } }
-  @media screen and (max-width: 320px) {
-    .navbar__inicio .nav-item a {
-      margin-bottom: 15px;
-      font-size: 14px; } }
+.navbar-container .navbar-nav .txt-inicio {
+  border-bottom: 1px solid black; }
 
-.bienvenida {
+.inicio__tablas {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff9d;
-  box-shadow: 1px 1px 30px -5px #212222;
-  border-radius: 10px;
-  margin-top: 30px;
-  padding: 25px;
-  line-height: 30px; }
-  .bienvenida h2 {
-    text-align: center; }
-  @media screen and (max-width: 1500px) {
-    .bienvenida {
-      margin-left: 400px;
-      margin-right: 400px; } }
-  @media screen and (max-width: 1024px) {
-    .bienvenida {
-      margin-left: 200px;
-      margin-right: 200px; } }
-  @media screen and (max-width: 768px) {
-    .bienvenida {
-      margin-left: 100px;
-      margin-right: 100px; } }
-  @media screen and (max-width: 540px) {
-    .bienvenida {
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 100px; } }
+  margin-top: 15px; }
+  .inicio__tablas .inicio__tabla1 {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(215, 250, 235, 0.596);
+    box-shadow: 1px 1px 30px -5px #2122229a;
+    font-size: 17px;
+    margin: 20px;
+    margin-top: 5px;
+    overflow-x: auto;
+    line-height: 27px; }
+    .inicio__tablas .inicio__tabla1 th {
+      padding: 7px;
+      border-bottom: 1px solid black; }
+    .inicio__tablas .inicio__tabla1 td {
+      border-bottom: 1px solid black;
+      padding-left: 10px; }
+  .inicio__tablas a {
+    text-decoration: none;
+    color: #934db4; }
   @media screen and (max-width: 320px) {
-    .bienvenida {
-      margin-top: 0; }
-      .bienvenida h2 {
-        font-size: 18px; }
-      .bienvenida p {
-        font-size: 15px; } }
+    .inicio__tablas {
+      display: block; } }
+
+.pie-inicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #9de7d746;
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  padding: 10px; }
+  .pie-inicio p {
+    margin: 0; }
+  .pie-inicio a {
+    text-decoration: none;
+    color: black; }
 
 .bg_clinica {
   background-image: url(../images/fondos/fondo2.png);
@@ -243,69 +302,15 @@
   max-height: auto; }
   @media screen and (max-width: 540px) {
     .bg_clinica {
-      background-image: url(../images/fondos/clinicaxs.png);
-      background-size: cover; } }
-
-.all__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff7c;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  .all__header ul li {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 2px; }
-    .all__header ul li:hover {
-      background-color: #ffffff7c;
-      border-radius: 5px; }
-    @media screen and (max-width: 320px) {
-      .all__header ul li {
-        font-size: 15px; } }
-  .all__header a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    margin-top: 10px; }
-    @media screen and (max-width: 320px) {
-      .all__header a {
-        font-size: 15px; } }
-  .all__header .nav > li {
-    float: left; }
-    .all__header .nav > li ul {
-      display: none;
-      position: absolute;
-      min-width: 145px; }
-    .all__header .nav > li:hover > ul {
-      display: block; }
-
-.navbar__all .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  font-size: 20px;
-  color: black;
-  margin-top: 20px; }
-  .navbar__all .menu li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px; }
-    .navbar__all .menu li a:hover {
-      color: #747070;
-      border-bottom: 1px solid black; }
-  .navbar__all .menu .clinica__txt {
-    border-bottom: 1px solid #212222; }
-  @media screen and (max-width: 540px) {
-    .navbar__all .menu {
-      font-size: 18px; } }
+      background-image: url(../images/fondos/fondoxxs.png);
+      background-size: auto; } }
   @media screen and (max-width: 320px) {
-    .navbar__all .menu {
-      font-size: 13px; } }
+    .bg_clinica {
+      background-image: url(../images/fondos/fondoxxs.png);
+      background-size: auto; } }
+
+.navbar-container .navbar-nav .txt-clinica {
+  border-bottom: 1px solid black; }
 
 .busqueda {
   display: block;
@@ -325,6 +330,12 @@
     font-size: small;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px; }
+  .busqueda button {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px; }
+    .busqueda button:hover {
+      transform: scale(1.1, 1.1); }
   @media screen and (max-width: 1500px) {
     .busqueda {
       margin-left: 400px;
@@ -350,220 +361,275 @@
       .busqueda p {
         font-size: 8px; } }
 
+.pie__clinica {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #9de7d746;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px; }
+  .pie__clinica p {
+    margin: 0; }
+  .pie__clinica a {
+    text-decoration: none;
+    color: black; }
+
 .bg_admn {
   background-image: url(../images/fondos/adminxl.png);
   background-repeat: no-repeat;
   background-size: auto;
   max-height: auto; }
 
-.navbar__all .menu .admn__txt {
-  border-bottom: 1px solid #212222; }
-
-.container__admn {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 23px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "Ventas Agendas Vacunacion" ". Control-de-Stock .";
-  margin-top: 150px; }
-  .container__admn a {
-    text-decoration: none;
-    color: black; }
-    .container__admn a:hover {
-      color: white; }
-  @media screen and (max-width: 540px) {
-    .container__admn {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-columns: 1fr;
-      gap: 28px 18px;
-      grid-auto-flow: row;
-      grid-template-areas: "Ventas Agendas " "Vacunacion Control-de-Stock ";
-      margin-top: 150px; } }
-  @media screen and (max-width: 320px) {
-    .container__admn {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-columns: 1fr;
-      grid-auto-flow: row;
-      grid-template-areas: "Ventas Agendas " "Vacunacion Control-de-Stock ";
-      margin-top: 100px; } }
-
-.Ventas {
-  grid-area: Ventas;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #c1f5ea9f; }
-  .Ventas:hover {
-    transform: scale(1.1, 1.1); }
-  @media screen and (max-width: 1500px) {
-    .Ventas {
-      margin: 50px; } }
-  @media screen and (max-width: 540px) {
-    .Ventas {
-      margin: 10px; } }
-
-.Agendas {
-  grid-area: Agendas;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #c1f5ea9f; }
-  .Agendas:hover {
-    transform: scale(1.1, 1.1); }
-  @media screen and (max-width: 1500px) {
-    .Agendas {
-      margin: 50px; } }
-  @media screen and (max-width: 540px) {
-    .Agendas {
-      margin: 10px; } }
-
-.Vacunacion {
-  grid-area: Vacunacion;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #c1f5ea9f; }
-  .Vacunacion:hover {
-    transform: scale(1.1, 1.1); }
-  @media screen and (max-width: 1500px) {
-    .Vacunacion {
-      margin: 50px; } }
-  @media screen and (max-width: 540px) {
-    .Vacunacion {
-      margin: 10px; } }
-
-.Control-de-Stock {
-  grid-area: Control-de-Stock;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #c1f5ea9f; }
-  .Control-de-Stock:hover {
-    transform: scale(1.1, 1.1); }
-  @media screen and (max-width: 1500px) {
-    .Control-de-Stock {
-      margin: 50px; } }
-  @media screen and (max-width: 540px) {
-    .Control-de-Stock {
-      margin: 10px; } }
+.navbar-container .navbar-nav .txt-admn {
+  border-bottom: 1px solid black; }
 
 .bg__estad {
-  background-image: url(../images/fondos/estadisticaxl.png); }
+  background-image: url(../images/fondos/estadisticaxl.png);
+  background-repeat: no-repeat; }
 
 @media screen and (max-width: 540px) {
   .all__header {
     font-size: 15px; } }
 
-.navbar__all .menu .estad__txt {
-  border-bottom: 1px solid #212222; }
+.navbar-container .navbar-nav .txt-estad {
+  border-bottom: 1px solid black; }
 
-@media screen and (max-width: 540px) {
-  .navbar__all {
-    font-size: 15px; } }
-
-.container__estad {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 28px 18px;
-  grid-auto-flow: row;
-  grid-template-areas: "ventas turnos parte" ". clientesxzona ayc ";
-  margin-top: 150px;
-  margin-bottom: 180px; }
-  .container__estad a {
-    text-decoration: none;
-    color: black; }
-    .container__estad a:hover {
-      color: white; }
-  @media screen and (max-width: 540px) {
-    .container__estad {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-auto-columns: 1fr;
-      gap: 28px 18px;
-      grid-auto-flow: row;
-      grid-template-areas: "ventas clientesxzona " "ayc turnos " "parte .";
-      margin-top: 150px;
-      margin-bottom: 100px;
-      font-size: 15px; } }
-
-.turnos {
-  grid-area: turnos;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #79dfc99f; }
-  .turnos:hover {
-    transform: scale(1.1, 1.1); }
-
-.parte {
-  grid-area: parte;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #79dfc99f; }
-  .parte:hover {
-    transform: scale(1.1, 1.1); }
-
-.clientesxzona {
-  grid-area: clientesxzona;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #79dfc99f; }
-  .clientesxzona:hover {
-    transform: scale(1.1, 1.1); }
-
-.ayc {
-  grid-area: ayc;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #79dfc99f; }
-  .ayc:hover {
-    transform: scale(1.1, 1.1); }
-
-.ventas {
-  grid-area: ventas;
-  border: 1px solid black;
-  padding: 15px;
-  margin: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: #79dfc99f;
-  align-items: center; }
-  .ventas:hover {
-    transform: scale(1.1, 1.1); }
-
-.pie__estad {
+.botones {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  background-color: #9de7d746;
-  width: 100%;
-  padding: 10px; }
-  .pie__estad a {
+  margin-top: 100px; }
+  .botones .boton__1 {
+    background-color: #e3f8ef;
+    padding: 50px;
+    border: none;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px -5px #212222ad; }
+    @media screen and (max-width: 768px) {
+      .botones .boton__1 {
+        margin: 10px; } }
+    @media screen and (max-width: 320px) {
+      .botones .boton__1 {
+        margin: 10px; } }
+  .botones .boton__2 {
+    background-color: #e3f8ef;
+    padding: 50px;
+    border: none;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px -5px #212222ad; }
+    @media screen and (max-width: 768px) {
+      .botones .boton__2 {
+        margin: 10px; } }
+    @media screen and (max-width: 320px) {
+      .botones .boton__2 {
+        margin: 10px; } }
+  .botones .boton__3 {
+    background-color: #e3f8ef;
+    padding: 50px;
+    border: none;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px -5px #212222ad; }
+    @media screen and (max-width: 768px) {
+      .botones .boton__3 {
+        margin: 10px; } }
+    @media screen and (max-width: 320px) {
+      .botones .boton__3 {
+        margin: 10px; } }
+  .botones .boton__4 {
+    background-color: #e3f8ef;
+    padding: 50px;
+    border: none;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px -5px #212222ad; }
+    @media screen and (max-width: 768px) {
+      .botones .boton__4 {
+        margin: 10px; } }
+    @media screen and (max-width: 320px) {
+      .botones .boton__4 {
+        margin: 10px; } }
+  .botones .boton__5 {
+    background-color: #e3f8ef;
+    padding: 50px;
+    border: none;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px -5px #212222ad; }
+    @media screen and (max-width: 768px) {
+      .botones .boton__5 {
+        margin: 10px; } }
+    @media screen and (max-width: 320px) {
+      .botones .boton__5 {
+        margin: 10px; } }
+  .botones a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px; }
+    .botones a:hover {
+      color: #c69ff8;
+      font-size: 23px; }
+
+.soporte__img img {
+  display: block;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99999;
+  width: 60px;
+  background-color: #b2e2d2; }
+
+.inicio__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff7c;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .inicio__header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black; }
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff7c;
+  font-size: 20px;
+  padding: 11px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .encabezado a {
     text-decoration: none;
     color: black; }
+
+/*dropdown*/
+.desplegable {
+  position: relative;
+  z-index: 1000;
+  /* el navbar de bs se superpone con mi desplegable hecho con scss por lo que tuve que recurrir a usar zindex para que deje de suceder*/ }
+  .desplegable > a {
+    color: black;
+    text-decoration: none; }
+    .desplegable > a:hover {
+      color: white; }
+  .desplegable:hover {
+    background-color: #e3cefa;
+    border-radius: 3px; }
+  .desplegable .desplegable-salir {
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.274);
+    position: absolute;
+    padding: 15px;
+    left: -50px; }
+    .desplegable .desplegable-salir ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: left; }
+    .desplegable .desplegable-salir li a {
+      color: black;
+      display: block;
+      padding: 5px;
+      text-decoration: none; }
+      .desplegable .desplegable-salir li a:hover {
+        background-color: #e3cefa;
+        color: white;
+        border-radius: 3px; }
+  .desplegable:hover .desplegable-salir {
+    display: block; }
+
+.formcontacto {
+  background: #181818;
+  color: #fff;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 30px; }
+  .formcontacto .contenido {
+    margin-left: auto;
+    margin-right: auto; }
+    .formcontacto .contenido a {
+      text-decoration: underline;
+      color: white;
+      font-size: 18px; }
+      .formcontacto .contenido a:hover {
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 3px; }
+  .formcontacto .form__header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px; }
+  .formcontacto .form__caja {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+    .formcontacto .form__caja > * {
+      padding: 1em; }
+    .formcontacto .form__caja .form__contacto {
+      background: #222222; }
+      .formcontacto .form__caja .form__contacto form {
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        .formcontacto .form__caja .form__contacto form label {
+          display: block; }
+        .formcontacto .form__caja .form__contacto form p {
+          margin: 0;
+          padding: 1em; }
+        .formcontacto .form__caja .form__contacto form .bloque {
+          grid-column: 1 / 3; }
+        .formcontacto .form__caja .form__contacto form button, .formcontacto .form__caja .form__contacto form input, .formcontacto .form__caja .form__contacto form textarea {
+          width: 100%;
+          padding: .7em;
+          border: none;
+          background: none;
+          outline: 0;
+          color: #fff;
+          border-bottom: 1px solid #c289e2; }
+        .formcontacto .form__caja .form__contacto form button {
+          background: #c289e2;
+          border: 0;
+          text-transform: uppercase;
+          padding: 1em; }
+          .formcontacto .form__caja .form__contacto form button:hover {
+            transform: scale(1.1, 1.1); }
+
+.form__info {
+  background: #000; }
+  .form__info ul {
+    list-style: none;
+    padding: 0; }
+  .form__info h4, .form__info ul, .form__info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  .form__info a {
+    margin-left: 50px;
+    text-decoration: underline;
+    color: white; }
+    .form__info a:hover {
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 3px;
+      padding: 3px; }
+
+.navbar-container .navbar-collapse {
+  justify-content: center;
+  font-size: 20px; }
+  .navbar-container .navbar-collapse li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px; }
+    .navbar-container .navbar-collapse li a:hover {
+      color: #747070;
+      border-bottom: 1px solid black; }

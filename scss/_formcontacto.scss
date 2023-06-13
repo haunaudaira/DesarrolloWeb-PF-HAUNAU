@@ -1,0 +1,97 @@
+.formcontacto {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding:30px;
+
+    .contenido {
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            text-decoration:underline;
+            color: white;
+            font-size: 18px;
+            &:hover{
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                border-radius: 3px;
+                padding: 3px;
+            }
+        }
+    }
+    .form__header {
+        h1{
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    }
+    .form__caja {
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+        > * {
+            padding: 1em;
+        }
+
+        .form__contacto {
+            background: #222222;
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                label {
+                    display: block;
+                }
+                p {
+                    margin: 0;
+                    padding: 1em;
+                }
+                .bloque {
+                    grid-column: 1 / 3;
+                }
+                button, input, textarea{
+                    width: 100%;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: 0;
+                    color: #fff;
+                    border-bottom: 1px solid #c289e2;
+                }
+                button {
+                    background: #c289e2;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1em;
+                    &:hover{
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form__info {
+    background: #000;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    h4, ul, p{
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    a{
+        margin-left: 50px;
+        text-decoration:underline;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 3px;
+        }
+    }
+}

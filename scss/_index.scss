@@ -1,6 +1,7 @@
+
 .header__login{
     text-align: right;
-    margin: 10px;
+    margin: 20px;
     a{
         text-decoration: none;
         color: black;
@@ -13,6 +14,7 @@
         }
         @include media-up(sm){
             font-size: 18px;
+            margin: 5px;
         }
     }
 }
@@ -45,8 +47,8 @@
             font-size: 50px;
             margin-left: 20px;
         }
-
         }
+
         p{
             padding-left: 25px;
             font-size: 25px;
@@ -101,6 +103,13 @@
     margin-top: 130px;
     margin-bottom: 100px;
 
+    .card{
+        border: none;
+        img{
+            align-items: center;
+        }
+    }
+
     @include media-up(xs){
         max-width: 20rem;
     }
@@ -123,7 +132,7 @@
 
 .iniciosesion{
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
     max-width: 500px;
     text-align: center;
     border-radius: 15px;

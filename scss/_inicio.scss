@@ -1,3 +1,5 @@
+$tablasfondo: rgba(215, 250, 235, 0.596);
+
 .bg_inicio{
     background-image: url(../images/fondos/fondo1.png);
     background-repeat: no-repeat;
@@ -16,90 +18,71 @@
 }
 
 .inicio__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff7c;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     a{
-        text-decoration: none;
-        font-size: 20px;
-        color: black;
-    
-    @include media-up(sm){
+        @include media-up(sm){
         font-size: 16px;
         margin: 5px;
-    }
-
-    }
-    
-}
-.navbar__inicio{
-    .nav-item{
-        a{
-        font-size: 20px;
-        color: black;
-        margin-top: 10px;
-        margin-bottom: 70px;
-        
-        @include media-up(sm){
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        @include media-up(xs){
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
         }
     }
 }
 
-.bienvenida{
+.navbar-container{
+    .navbar-nav{
+        .txt-inicio{
+            border-bottom: 1px solid black;
+        }
+    }
+} 
+.inicio__tablas{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff9d;
-    box-shadow:1px 1px 30px -5px #212222;
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 25px;
-    line-height: 30px;
-
-    h2{
-        text-align: center;
-    }
-
-    @include media-up(xl){
-        margin-left: 400px;
-        margin-right: 400px;
-    }
-
-    @include media-up(lg){
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-
-    @include media-up(md){
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    @include media-up(sm){
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 100px;
-    }
-
-    @include media-up(xs){
-        margin-top: 0;
-        h2{
-            font-size: 18px;
-        } 
-        p{
-            font-size: 15px;
+    margin-top: 15px    ;
+    .inicio__tabla1{
+        th{
+            padding: 7px;
+            border-bottom: 1px solid black;
         }
-    }  
+        td{
+            border-bottom: 1px solid black;
+            padding-left: 10px;
+        }
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $tablasfondo;
+        box-shadow:1px 1px 30px -5px #2122229a ;
+        font-size: 17px;
+        margin: 20px;
+        margin-top: 5px;
+        overflow-x: auto;
+        line-height: 27px;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(147, 77, 180);
+    }
+
+    @include media-up (xs){
+        display: block;
+    }
 }
+
+.pie-inicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9de7d746;
+    position: absolute; 
+    bottom: auto;
+    width: 100%;
+    padding: 10px;
+    p{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+} 
